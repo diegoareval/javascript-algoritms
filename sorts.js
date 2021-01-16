@@ -28,4 +28,16 @@ const factorial2 = number => {
 
   console.log("way1", factorial1(5))
   console.log("way2", factorial2(5))
+
+  // create native method repitify
+  String.prototype.repeatify = String.prototype.repeatify || function(times) {
+    let str = '';
+    for (let i = 0; i < times; i++) {
+       str += '' + this;
+    }
+    return str;
+ };
+
+ // apply native method
+ console.log('hello'.repeatify(3));
   
