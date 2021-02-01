@@ -40,6 +40,7 @@ const factorial2 = number => {
   console.log('racecar'.palindrome());
 
   console.log('table'.palindrome());
+  
 
   // Confeccionar una clase persona que permita almacenar el nombre y la edad. Luego definir un vector de 4 componentes de tipo persona. 
   // Imprimir el nombre de la persona de mayor edad; decir también si hay más de una persona con la edad mayor.
