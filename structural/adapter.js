@@ -26,6 +26,5 @@ class OutStandingStudentAdapter {
   }
 }
 
-const student = new OutStandingStudent(6);
-const studentAdapter = new OutStandingStudentAdapter(student);
+const studentAdapter = new OutStandingStudentAdapter(new OutStandingStudent(6));
 console.log(studentAdapter.practice());

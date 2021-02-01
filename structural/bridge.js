@@ -46,10 +46,9 @@ class NissanCar extends Car {
       super("super");
     }
   }
-  const regular = new RegularOil()
-  const superr = new SuperOil();
-  const nissan = new NissanCar(regular)
-  const toyota = new ToyotaCar(superr)
+
+  const nissan = new NissanCar(new RegularOil())
+  const toyota = new ToyotaCar(new SuperOil())
   console.log(nissan.features());
   console.log(toyota.features());
 

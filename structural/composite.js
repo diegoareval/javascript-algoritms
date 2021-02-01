@@ -65,11 +65,9 @@ class Auxiliar extends Employe {
   }
 
   // objects
-  const auxiliar = new Auxiliar();
-  const auxiliar2 = new Auxiliar();
-  const counter = new Counter();
   const composite = new Composite();
-  composite.add(auxiliar);
-  composite.add(auxiliar2);
-  composite.add(counter);
+  composite.add(new Auxiliar());
+  composite.add(new Auxiliar());
+  composite.add(new Counter());
+  composite.add(new Inversor());
   console.log(composite.getSalary());
